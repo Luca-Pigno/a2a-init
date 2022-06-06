@@ -8,11 +8,21 @@ import Menu from "./components/functional_components/menu/Menu";
 import FaqsContainer from "./components/functional_components/faqsContainer/FaqsContainer";
 import Faq from "./components/hook_components/faq/Faq";
 import FaqLink from "./components/functional_components/faqLink/FaqLink";
+import Carousel from "./components/functional_components/carousel/Carousel";
 
 // assets
 import Graduation from "./assets/images/icons/graduation.svg";
 import Newspaper from "./assets/images/icons/newspaper.svg";
 import Trash from "./assets/images/icons/trash.svg";
+
+
+// In base al numero di immagini nell'array, andare nel file Carousel.css e modificare alcuni parametri 
+const mockImages = [
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg",
+  "https://www.youandthemat.com/wp-content/uploads/nature-2-26-17.jpg",
+  "https://dearsam.com/img/600/744/resize/n/a/nature-day-70x50_8ace0.jpg",
+  "https://www.iucn.org/sites/dev/files/content/images/2020/shutterstock_1458128810.jpg"
+]
 
 const App = () => {
 
@@ -84,6 +94,12 @@ const App = () => {
             ]}
           />
         ]}
+      />
+
+      <br />
+
+      <Carousel
+        images={mockImages}
       />
     </div>
   );

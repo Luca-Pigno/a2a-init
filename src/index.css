@@ -23,7 +23,8 @@
   --weight-texts: 700;
 
   /* padding */
-  --mobile-app-padding: 22px
+  /* se si modifica qeusto parametro, aggiornare con il nuovo valore in Carousel.css */
+  --mobile-app-padding: 22px;
 }
 
 
