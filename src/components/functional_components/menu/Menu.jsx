@@ -6,7 +6,11 @@ import './Menu.css';
 // assets
 import Logo from "../../../assets/images/white-logo.svg";
 
-const Menu = () => {
+const Menu = (props) => {
+
+  const handleClick = (e) => {
+    props.handleClick(e.target.checked);
+  }
 
   return (
     <div className="menu-container">
@@ -18,7 +22,7 @@ const Menu = () => {
       </div>
 
       <div className="burger-container">
-        <input type="checkbox" />
+        <input type="checkbox" onClick={handleClick}/>
         <span className="burger-line burger-line1" />
         <span className="burger-line burger-line2" />
         <span className="burger-line burger-line3" />

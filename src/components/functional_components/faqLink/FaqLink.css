@@ -1,0 +1,25 @@
+.faqLink-container {
+  background-color: var(--space-blue);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 25px 19px;
+  margin-bottom: 25px;
+  min-height: 100px;
+  text-decoration: none;
+}
+
+.faqLink-icon-container {
+  width: 60px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+}
+
+.faqLink-text-container {
+  width: calc(100% - 60px);
+  font-family: var(--inter);
+  font-size: 18px;
+  color: var(--blue);
+  padding-left: 10px;
+}

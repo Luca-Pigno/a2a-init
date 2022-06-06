@@ -6,6 +6,7 @@
   --white: #FFFFFF;
   --deep-blue: #131821;
   --dark-blue: #1D1D2A;
+  --space-blue: #29293E;
   --blue: #009FE2;
   --light-blue: #D4EDFC;
   --grey: #9F9F9F;
@@ -19,7 +20,7 @@
 
   /* font-weights */
   --weight-button-labels: 700;
-  --weight-card-texts: 700;
+  --weight-texts: 700;
 
   /* padding */
   --mobile-app-padding: 22px

@@ -16,7 +16,7 @@
 .card-title-container .card-title {
   font-size: 18px;
   color: var(--blue);
-  font-weight: var(--weight-card-texts);
+  font-weight: var(--weight-texts);
   display: flex;
   align-items: center;
   width: 100%;
@@ -25,7 +25,7 @@
 .card-title-container .card-number {
   font-size: 40px;
   color: var(--white);
-  font-weight: var(--weight-card-texts);
+  font-weight: var(--weight-texts);
   filter: opacity(0.3);
 }
 
