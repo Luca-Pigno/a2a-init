@@ -15,6 +15,13 @@ const Card = (props) => {
       </div>
       <div className="card-description-container">
         {props.description}
+        {
+          props.destination &&
+          <div className="card-destination-container">
+            <p>Destinazione:</p>
+            {props.destination}
+          </div>
+        }
       </div>
     </div>
   )

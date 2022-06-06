@@ -9,6 +9,10 @@
   text-decoration: none;
 }
 
+.faqLink-container:hover {
+  filter: brightness(1.1);
+}
+
 .faqLink-icon-container {
   width: 60px;
   height: 34px;

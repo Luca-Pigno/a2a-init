@@ -19,7 +19,8 @@
   font-weight: var(--weight-texts);
   display: flex;
   align-items: center;
-  width: 100%;
+  width: calc(100% - 46px);
+  padding-right: 80px;
 }
 
 .card-title-container .card-number {
@@ -27,6 +28,7 @@
   color: var(--white);
   font-weight: var(--weight-texts);
   filter: opacity(0.3);
+  width: 46px;
 }
 
 .card-description-container {
@@ -35,6 +37,15 @@
   font-size: 21px;
   font-family: var(--inter);
   min-height: 250px;
+}
+
+.card-destination-container {
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.card-destination-container p {
+  color: var(--blue);
 }
 
 @media screen and (min-width: 480px) {

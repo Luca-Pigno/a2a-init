@@ -48,9 +48,10 @@ const App = () => {
       <br />
 
       <Card
-        title="visori"
-        number="01"
-        description={"I visori 'leggono' il materiale tramite:"}
+        title="Elementi intermedi"
+        number="02"
+        description={"I rifiuti sotto ai 5 cm cadono verso il basso. I rifiuti metallici vengono convogliati al recupero finale."}
+        destination={"separazione ottica."}
       />
 
       <br />
