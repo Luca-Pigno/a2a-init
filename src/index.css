@@ -1,3 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* colors */
+  --black: #000000;
+  --white: #FFFFFF;
+  --deep-blue: #131821;
+  --dark-blue: #1D1D2A;
+  --blue: #009FE2;
+  --light-blue: #D4EDFC;
+  --grey: #9F9F9F;
+  --orange: #FFA005;
+
+  /* fonts */
+  --inter: "Inter", "sans-serif";
+
+  /* font-sizes */
+  --size-button-labels: 12px;
+
+  /* font-weights */
+  --weight-button-labels: 700;
+  --weight-card-texts: 700;
+
+  /* padding */
+  --mobile-app-padding: 22px
+}
+
+
 /* Box sizing rules */
 *,
 *::before,

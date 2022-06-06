@@ -1,0 +1,18 @@
+.custom-button {
+  background-color: var(--orange);
+  color: var(--white);
+  font-size: var(--size-button-labels);
+  font-weight: var(--weight-button-labels);
+  text-transform: uppercase;
+  padding: 13px;
+  letter-spacing: .5px;
+  border-radius: 60px;
+  min-width: 160px;
+  border: 11px solid var(--grey);
+  cursor: pointer;
+}
+
+.custom-button-inverted-color {
+  background-color: var(--white);
+  color: var(--orange);
+}
