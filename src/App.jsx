@@ -16,6 +16,7 @@ import Graduation from "./assets/images/icons/graduation.svg";
 import Newspaper from "./assets/images/icons/newspaper.svg";
 import Trash from "./assets/images/icons/trash.svg";
 import IconButton from "./components/functional_components/iconButton/IconButton";
+import GameCard from "./components/functional_components/gameCard/GameCard";
 
 
 
@@ -54,8 +55,19 @@ const App = () => {
 
       <Button
         label="start"
-        // invertColor
-        // transparent
+        handleClick={handleButtonClick}
+      />
+      <br/>
+      <Button
+        label="start"
+        invertColor
+        handleClick={handleButtonClick}
+      />
+      <br/>
+      <Button
+        label="start"
+        invertColor
+        transparent
         handleClick={handleButtonClick}
       />
 
@@ -122,6 +134,29 @@ const App = () => {
       <IconButton
         type={"arrow-down"}
         handleClick={handleButtonClick}
+      />
+      <IconButton
+        type={"resize-open"}
+        handleClick={handleButtonClick}
+      />
+      <IconButton
+        type={"resize-close"}
+        handleClick={handleButtonClick}
+      />
+      <IconButton
+        type={"arrow-left"}
+        handleClick={handleButtonClick}
+      />
+      <IconButton
+        type={"arrow-right"}
+        handleClick={handleButtonClick}
+      />
+
+      <br />
+
+      <GameCard
+        number="01"
+        description="Rimuovi i residui dal nastro trasportatore lasciando passare solo la plastica azzurrata."
       />
 
     </div>

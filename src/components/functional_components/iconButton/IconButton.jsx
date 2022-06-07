@@ -5,6 +5,8 @@ import './IconButton.css';
 
 // asstes
 import ArrowDown from "../../../assets/images/icons/arrowhead-down.svg";
+import ResizeArrow from '../../../assets/images/icons/arrow.svg';
+import BoldArrow from "../../../assets/images/icons/bold-arrow.svg";
 
 const IconButton = (props) => {
 
@@ -12,30 +14,61 @@ const IconButton = (props) => {
     props.handleClick(e);
   }
 
-  const getButtonIcon = (type) => {
+  const getButtonIcon = (type, value) => {
     let icon;
+    let classname = "icon-button-container";
+
     switch (type) {
       case ("close"):
         icon = <div>&#10006;</div>;
         break;
       case ("arrow-down"):
         icon = <img src={ArrowDown} alt={"scroll down"} />;
+        classname += " arrow-down-container";
+        break;
+      case ("resize-open"):
+        icon = <div className="resize-open-button-arrows">
+          <img src={ResizeArrow} alt={" "} />
+          <img src={ResizeArrow} alt={" "} />
+        </div>;
+        classname += " resize-arrows-container";
+        break;
+      case ("resize-close"):
+        icon = <div className="resize-close-button-arrows">
+          <img src={ResizeArrow} alt={" "} />
+          <img src={ResizeArrow} alt={" "} />
+        </div>;
+        classname += " resize-arrows-container";
+        break;
+      case ("arrow-left"):
+        icon = <img src={BoldArrow} alt={"back"} />;
+        classname += " arrow-left-container";
+        break;
+      case ("arrow-right"):
+        icon = <img src={BoldArrow} alt={"back"} />;
+        classname += " arrow-right-container";
         break;
       default:
         icon = <div>&#10006;</div>;
         break;
     }
-    return icon;
+
+    if (value === "icon") {
+      return icon;
+    }
+    return classname;
   }
 
 
   return (
-    <button
-      className={`icon-button-container ${props.type === "arrow-down" && "arrow-down-container"}`}
-      onClick={handleClick}
-    >
-      {getButtonIcon(props.type)}
-    </button>
+    <div className={(props.type === "resize-open" || props.type === "resize-close") ? "icon-button-border" : null}>
+      <button
+        className={getButtonIcon(props.type, "classname")}
+        onClick={handleClick}
+      >
+        {getButtonIcon(props.type, "icon")}
+      </button>
+    </div>
   )
 }
 

@@ -18,3 +18,66 @@
   width: 40px;
   height: 40px;
 }
+
+.icon-button-border {
+  width: 56px;
+  height: 56px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resize-arrows-container {
+  width: 48px;
+  height: 48px;
+}
+
+.resize-open-button-arrows,
+.resize-close-button-arrows {
+  position: relative;
+  height: 100%;
+}
+
+.resize-open-button-arrows img,
+.resize-close-button-arrows img {
+  position: absolute;
+  width: 9px;
+}
+
+.resize-open-button-arrows img:nth-child(1) {
+  top: 13px;
+  right: 9px;
+  transform: rotate(-45deg);
+}
+
+.resize-open-button-arrows img:nth-child(2) {
+  bottom: 13px;
+  left: 9px;
+  transform: rotate(135deg);
+}
+
+.resize-close-button-arrows img:nth-child(1) {
+  top: 13px;
+  right: 9px;
+  transform: rotate(135deg);
+}
+
+.resize-close-button-arrows img:nth-child(2) {
+  bottom: 13px;
+  left: 9px;
+  transform: rotate(-45deg);
+}
+
+.arrow-right-container {
+  background-color: var(--blue);
+  padding-bottom: 3px;
+  transform: rotate(90deg);
+}
+
+.arrow-left-container {
+  background-color: var(--blue);
+  padding-bottom: 3px;
+  transform: rotate(-90deg);
+}

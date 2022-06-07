@@ -22,7 +22,6 @@
 
 .faqLink-text-container {
   width: calc(100% - 60px);
-  font-family: var(--inter);
   font-size: 18px;
   color: var(--blue);
   padding-left: 10px;
