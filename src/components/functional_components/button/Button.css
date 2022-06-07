@@ -16,3 +16,8 @@
   background-color: var(--white);
   color: var(--orange);
 }
+
+.custom-button-transparent {
+  background-color: transparent;
+  border: none;
+}

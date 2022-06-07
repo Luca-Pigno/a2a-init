@@ -7,7 +7,9 @@ const FaqsContainer = (props) => {
 
   return (
     <div className="faqs-container">
-      {props.faq}
+      {props.faq.map((faq, i) => {
+        return <div key={i}>{faq}</div>
+      })}
     </div>
   )
 }

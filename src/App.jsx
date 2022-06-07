@@ -9,11 +9,14 @@ import FaqsContainer from "./components/functional_components/faqsContainer/Faqs
 import Faq from "./components/hook_components/faq/Faq";
 import FaqLink from "./components/functional_components/faqLink/FaqLink";
 import Carousel from "./components/functional_components/carousel/Carousel";
+import Balloon from "./components/functional_components/balloon/Balloon";
 
 // assets
 import Graduation from "./assets/images/icons/graduation.svg";
 import Newspaper from "./assets/images/icons/newspaper.svg";
 import Trash from "./assets/images/icons/trash.svg";
+import IconButton from "./components/functional_components/iconButton/IconButton";
+
 
 
 // In base al numero di immagini nell'array, andare nel file Carousel.css e modificare alcuni parametri 
@@ -42,7 +45,7 @@ const App = () => {
       flexDirection: "column",
       minHeight: "100vh",
       backgroundColor: "#1D1D2A",
-      padding: "22px",
+      padding: "100px 22px 22px",
       position: "relative"
     }}>
       <Menu
@@ -52,6 +55,7 @@ const App = () => {
       <Button
         label="start"
         // invertColor
+        // transparent
         handleClick={handleButtonClick}
       />
 
@@ -101,6 +105,25 @@ const App = () => {
       <Carousel
         images={mockImages}
       />
+
+      <br />
+
+      <Balloon
+        text={"Ciao! Anch'io ho fatto questo viaggio... ed è proprio per questo che sono ancora qui con voi!"}
+        handleCloseClick={handleButtonClick}
+      />
+
+      <br />
+
+      <IconButton
+        type={"close"}
+        handleClick={handleButtonClick}
+      />
+      <IconButton
+        type={"arrow-down"}
+        handleClick={handleButtonClick}
+      />
+
     </div>
   );
 }

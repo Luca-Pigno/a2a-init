@@ -7,7 +7,7 @@
 }
 
 .carousel-track {
-  animation: mobile-carousel-scroll 30s linear infinite;
+  animation: mobile-carousel-scroll 40s linear infinite;
   display: flex;
   height: 100%;
   /* moltiplico per il doppio del numero di foto nel carosello */
@@ -54,7 +54,7 @@
   }
 
   .carousel-track {
-    animation: desktop-carousel-scroll 30s linear infinite;
+    animation: desktop-carousel-scroll 40s linear infinite;
     flex-direction: column;
     width: 100%;
     /* moltiplico per il doppio del numero di foto nel carosello */

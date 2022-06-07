@@ -32,7 +32,9 @@ const Faq = (props) => {
       <div
         className={`faq-link-container ${state.faqIsOpen && "faq-link-container-open"}`}
       >
-        {props.links}
+        {props.links.map((link, i) => {
+          return <div key={i}>{link}</div>
+        })}
       </div>
     </div>
   )

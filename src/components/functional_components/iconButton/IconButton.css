@@ -1,0 +1,20 @@
+.icon-button-container {
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--white);
+  color: var(--orange);
+  box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 9px;
+  padding-top: 2px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.arrow-down-container {
+  background-color: transparent;
+  box-shadow: none;
+  width: 40px;
+  height: 40px;
+}

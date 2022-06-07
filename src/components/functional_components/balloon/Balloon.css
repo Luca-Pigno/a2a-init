@@ -1,0 +1,32 @@
+.balloon-container {
+  padding: 10px 10px 0 0;
+  position: relative;
+}
+
+.balloon-text-container {
+  width: 245px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: var(--weight-texts);
+  padding: 12px;
+  border-radius: 14px;
+}
+
+.balloon-close-button-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.balloon-triangle {
+  width: 0px;
+  height: 0px;
+  border-bottom: 13px solid var(--blue);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  transform: rotate(-135deg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

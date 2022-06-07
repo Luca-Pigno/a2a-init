@@ -11,7 +11,7 @@ const Button = (props) => {
 
   return (
     <button 
-      className={`custom-button ${props.invertColor && "custom-button-inverted-color"}`}
+      className={`custom-button ${props.invertColor && "custom-button-inverted-color"} ${props.transparent && "custom-button-transparent"}`}
       onClick={handleClick}
     >
       {props.label}
