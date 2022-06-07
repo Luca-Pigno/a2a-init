@@ -31,14 +31,12 @@ const IconButton = (props) => {
           <img src={ResizeArrow} alt={" "} />
           <img src={ResizeArrow} alt={" "} />
         </div>;
-        classname += " resize-arrows-container";
         break;
       case ("resize-close"):
         icon = <div className="resize-close-button-arrows">
           <img src={ResizeArrow} alt={" "} />
           <img src={ResizeArrow} alt={" "} />
         </div>;
-        classname += " resize-arrows-container";
         break;
       case ("arrow-left"):
         icon = <img src={BoldArrow} alt={"back"} />;
@@ -48,9 +46,17 @@ const IconButton = (props) => {
         icon = <img src={BoldArrow} alt={"back"} />;
         classname += " arrow-right-container";
         break;
+      case ("plus"):
+        icon = <div>&#10006;</div>;
+        classname += " plus-icon-container";
+        break;
       default:
         icon = <div>&#10006;</div>;
         break;
+    }
+
+    if (props.size === "xl") {
+      classname += " icon-button-xl-container";
     }
 
     if (value === "icon") {
@@ -61,7 +67,7 @@ const IconButton = (props) => {
 
 
   return (
-    <div className={(props.type === "resize-open" || props.type === "resize-close") ? "icon-button-border" : null}>
+    <div className={props.size === "xl" ? "icon-button-border" : null}>
       <button
         className={getButtonIcon(props.type, "classname")}
         onClick={handleClick}

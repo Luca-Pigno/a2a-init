@@ -30,7 +30,7 @@ const Faq = (props) => {
         </div>
       </button>
       <div
-        className={`faq-link-container ${state.faqIsOpen && "faq-link-container-open"}`}
+        className={`faq-link-container ${state.faqIsOpen && "faq-link-container-open"} ${props.links.length > 1 && "faq-link-shorter"}`}
       >
         {props.links.map((link, i) => {
           return <div key={i}>{link}</div>

@@ -132,6 +132,11 @@ const App = () => {
         handleClick={handleButtonClick}
       />
       <IconButton
+        type={"close"}
+        size={"xl"}
+        handleClick={handleButtonClick}
+      />
+      <IconButton
         type={"arrow-down"}
         handleClick={handleButtonClick}
       />
@@ -144,12 +149,31 @@ const App = () => {
         handleClick={handleButtonClick}
       />
       <IconButton
+        type={"resize-open"}
+        handleClick={handleButtonClick}
+        size={"xl"}
+      />
+      <IconButton
+        type={"resize-close"}
+        handleClick={handleButtonClick}
+        size={"xl"}
+      />
+      <IconButton
         type={"arrow-left"}
         handleClick={handleButtonClick}
       />
       <IconButton
         type={"arrow-right"}
         handleClick={handleButtonClick}
+      />
+      <IconButton
+        type={"plus"}
+        handleClick={handleButtonClick}
+      />
+      <IconButton
+        type={"plus"}
+        handleClick={handleButtonClick}
+        size={"xl"}
       />
 
       <br />

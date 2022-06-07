@@ -44,4 +44,17 @@
    font-size: 70px;
    font-weight: var(--weight-texts);
   }
+
+  .faq-link-shorter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .faq-link-shorter>div {
+    width: calc(50% - 10px);
+  }
+
+  .faq-link-shorter>div:nth-child(even) {
+    margin-left: 20px;
+  }
 }
