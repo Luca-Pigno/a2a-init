@@ -1,0 +1,93 @@
+[
+  {
+    "id": "01",
+    "title": "introduzione",
+    "color": "blue",
+    "linkTo": "#",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg"
+  },
+  {
+    "id": "02",
+    "title": "il viaggio della plastica",
+    "color": "orange",
+    "linkTo": "#",
+    "photo": "https://www.youandthemat.com/wp-content/uploads/nature-2-26-17.jpg"
+  },
+  {
+    "id": "03",
+    "title": "da scarto a risorsa",
+    "color": "blue",
+    "linkTo": "#",
+    "photo": "https://dearsam.com/img/600/744/resize/n/a/nature-day-70x50_8ace0.jpg"
+  },
+  {
+    "id": "04",
+    "title": "dove tutto si trasforma",
+    "color": "blue",
+    "linkTo": "#",
+    "photo": "https://www.iucn.org/sites/dev/files/content/images/2020/shutterstock_1458128810.jpg"
+  },
+  {
+    "id": "05",
+    "title": "macchina aprisacchi",
+    "color": "orange",
+    "linkTo": "#",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg"
+  },
+  {
+    "id": "06",
+    "title": "separazione meccanica",
+    "color": "blue",
+    "linkTo": "#",
+    "photo": "https://www.youandthemat.com/wp-content/uploads/nature-2-26-17.jpg"
+  },
+  {
+    "id": "07",
+    "title": "vaglio rotante",
+    "color": "orange",
+    "linkTo": "#",
+    "photo": "https://dearsam.com/img/600/744/resize/n/a/nature-day-70x50_8ace0.jpg"
+  },
+  {
+    "id": "08",
+    "title": "separatore balistico",
+    "color": "blue",
+    "linkTo": "#",
+    "photo": "https://www.iucn.org/sites/dev/files/content/images/2020/shutterstock_1458128810.jpg"
+  },
+  {
+    "id": "09",
+    "title": "wind shifter",
+    "color": "blue",
+    "linkTo": "#",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg"
+  },
+  {
+    "id": "10",
+    "title": "magnete deferizzatore",
+    "color": "blue",
+    "linkTo": "#",
+    "photo": "https://www.youandthemat.com/wp-content/uploads/nature-2-26-17.jpg"
+  },
+  {
+    "id": "11",
+    "title": "separazione ottica",
+    "color": "blue",
+    "linkTo": "#",
+    "photo": "https://dearsam.com/img/600/744/resize/n/a/nature-day-70x50_8ace0.jpg"
+  },
+  {
+    "id": "12",
+    "title": "separazione manuale",
+    "color": "orange",
+    "linkTo": "#",
+    "photo": "https://www.iucn.org/sites/dev/files/content/images/2020/shutterstock_1458128810.jpg"
+  },
+  {
+    "id": "13",
+    "title": "prodotti finali",
+    "color": "blue",
+    "linkTo": "#",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg"
+  }
+]

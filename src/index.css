@@ -12,6 +12,9 @@
   --grey: #9F9F9F;
   --orange: #FFA005;
 
+  /* DA DEFINIRE */
+  --navbar-dark: #1C1F28; 
+
   /* fonts */
   --inter: "Inter", "sans-serif";
 
@@ -31,7 +34,6 @@
   color: var(--blue);
   font-weight: var(--weight-texts);
 }
-
 
 /* Box sizing rules */
 *,

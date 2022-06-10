@@ -13,12 +13,14 @@ import Balloon from "./components/functional_components/balloon/Balloon";
 import FirstPageContainer from "./components/functional_components/firstPageContainer/FirstPageContainer";
 import IconButton from "./components/functional_components/iconButton/IconButton";
 import GameCard from "./components/functional_components/gameCard/GameCard";
+import MenuDot from "./components/functional_components/menuDot/MenuDot";
+import MenuItem from "./components/functional_components/menuItem/MenuItem";
 
 // assets
 import Graduation from "./assets/images/icons/graduation.svg";
 import Newspaper from "./assets/images/icons/newspaper.svg";
 import Trash from "./assets/images/icons/trash.svg";
-
+import MockRoutes from "./mockRoutes.json";
 
 
 // In base al numero di immagini nell'array, andare nel file Carousel.css e modificare alcuni parametri 
@@ -50,7 +52,7 @@ const App = () => {
       position: "relative"
     }}>
       <Menu
-        handleClick={handleMenuClick}
+        routes={MockRoutes}
       />
 
       <Button
@@ -204,6 +206,46 @@ const App = () => {
         buttonLabel={"Inizia"}
         buttonHandleClick={handleButtonClick}
       />
+
+      <br /><br />
+
+      <MenuDot
+        color={"blue"}
+        to={"#"}
+        title={"Dove tutto si trasforma"}
+      />
+      <br />
+      <MenuDot
+        color={"orange"}
+        to={"#"}
+        title={"Dove tutto si trasforma"}
+      />
+      <br />
+      <MenuDot
+        color={"blue"}
+        to={"#"}
+        title={"Dove tutto si trasforma"}
+        selected
+      />
+      <br />
+      <MenuDot
+        color={"orange"}
+        to={"#"}
+        title={"Dove tutto si trasforma"}
+        selected
+      />
+
+      <br />
+
+      <MenuItem
+        id={"01"}
+        title={"dove tutto si trasforma"}
+        color={"orange"}
+        linkTo={"#"}
+        photo={"https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg"}
+      />
+
+      <br /><br />
 
     </div>
   );
