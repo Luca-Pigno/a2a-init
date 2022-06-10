@@ -7,6 +7,7 @@ import './IconButton.css';
 import ArrowDown from "../../../assets/images/icons/arrowhead-down.svg";
 import ResizeArrow from '../../../assets/images/icons/arrow.svg';
 import BoldArrow from "../../../assets/images/icons/bold-arrow.svg";
+import Play from "../../../assets/images/icons/play.svg";
 
 const IconButton = (props) => {
 
@@ -39,16 +40,20 @@ const IconButton = (props) => {
         </div>;
         break;
       case ("arrow-left"):
-        icon = <img src={BoldArrow} alt={"back"} />;
+        icon = <img src={BoldArrow} alt={"previous"} />;
         classname += " arrow-left-container";
         break;
       case ("arrow-right"):
-        icon = <img src={BoldArrow} alt={"back"} />;
+        icon = <img src={BoldArrow} alt={"next"} />;
         classname += " arrow-right-container";
         break;
       case ("plus"):
         icon = <div>&#10006;</div>;
         classname += " plus-icon-container";
+        break;
+      case ("play"):
+        icon = <img src={Play} alt={"play"} />;
+        classname += " play-icon-container";
         break;
       default:
         icon = <div>&#10006;</div>;

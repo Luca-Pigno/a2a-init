@@ -27,6 +27,11 @@
   --mobile-app-padding: 22px;
 }
 
+.blueBoldText {
+  color: var(--blue);
+  font-weight: var(--weight-texts);
+}
+
 
 /* Box sizing rules */
 *,

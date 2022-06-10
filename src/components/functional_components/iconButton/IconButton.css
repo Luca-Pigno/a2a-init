@@ -115,3 +115,14 @@
 .plus-icon-container {
   transform: rotate(45deg);
 }
+
+.play-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.play-icon-container img {
+  width: 18px;
+}

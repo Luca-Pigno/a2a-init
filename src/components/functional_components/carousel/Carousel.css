@@ -2,8 +2,7 @@
   height: 160px;
   overflow: hidden;
   position: relative;
-  /* aggiungo il doppio del padding della home */
-  width: calc(100% + 44px);
+  width: 100%;
 }
 
 .carousel-track {
@@ -21,6 +20,16 @@
 	100% { 
     /* moltiplico per il numero di foto nel carosello */
     transform: translateX(calc(-280px * 4))
+  }
+}
+
+@keyframes little-desktop-carousel-scroll {
+	0% { 
+    transform: translateY(0); 
+  }
+	100% { 
+    /* moltiplico per il numero di foto nel carosello */
+    transform: translateY(calc(-210px * 4))
   }
 }
 
@@ -49,14 +58,40 @@
 @media screen and (min-width: 1024px) {
 
   .carousel-container {
+    width: 328px;
+    height: 100%;
+  }
+
+  .carousel-track {
+    animation: little-desktop-carousel-scroll 40s linear infinite;
+    flex-direction: column;
+    width: 100%;
+    /* moltiplico per il doppio del numero di foto nel carosello */
+    height: calc(210px * 8);
+  }
+
+  .carousel-container::before,
+  .carousel-container::after {
+    height: 210px;
+    width: 100%;
+  }
+
+  .carousel-image-container {
+    width: 100%;
+    height: 190px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .carousel-container {
     width: 428px;
-    height: 600px;
   }
 
   .carousel-track {
     animation: desktop-carousel-scroll 40s linear infinite;
-    flex-direction: column;
-    width: 100%;
     /* moltiplico per il doppio del numero di foto nel carosello */
     height: calc(280px * 8);
   }
@@ -64,14 +99,9 @@
   .carousel-container::before,
   .carousel-container::after {
     height: 280px;
-    width: 100%;
   }
 
   .carousel-image-container {
-    width: 100%;
     height: 260px;
-    margin-right: 0px;
-    margin-bottom: 20px;
   }
-
 }

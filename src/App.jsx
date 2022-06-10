@@ -10,13 +10,14 @@ import Faq from "./components/hook_components/faq/Faq";
 import FaqLink from "./components/functional_components/faqLink/FaqLink";
 import Carousel from "./components/functional_components/carousel/Carousel";
 import Balloon from "./components/functional_components/balloon/Balloon";
+import FirstPageContainer from "./components/functional_components/firstPageContainer/FirstPageContainer";
+import IconButton from "./components/functional_components/iconButton/IconButton";
+import GameCard from "./components/functional_components/gameCard/GameCard";
 
 // assets
 import Graduation from "./assets/images/icons/graduation.svg";
 import Newspaper from "./assets/images/icons/newspaper.svg";
 import Trash from "./assets/images/icons/trash.svg";
-import IconButton from "./components/functional_components/iconButton/IconButton";
-import GameCard from "./components/functional_components/gameCard/GameCard";
 
 
 
@@ -46,7 +47,6 @@ const App = () => {
       flexDirection: "column",
       minHeight: "100vh",
       backgroundColor: "#1D1D2A",
-      padding: "100px 22px 22px",
       position: "relative"
     }}>
       <Menu
@@ -57,13 +57,13 @@ const App = () => {
         label="start"
         handleClick={handleButtonClick}
       />
-      <br/>
+      <br />
       <Button
         label="start"
         invertColor
         handleClick={handleButtonClick}
       />
-      <br/>
+      <br />
       <Button
         label="start"
         invertColor
@@ -175,12 +175,34 @@ const App = () => {
         handleClick={handleButtonClick}
         size={"xl"}
       />
+      <IconButton
+        type={"play"}
+        handleClick={handleButtonClick}
+        size={"xl"}
+      />
 
       <br />
 
       <GameCard
         number="01"
         description="Rimuovi i residui dal nastro trasportatore lasciando passare solo la plastica azzurrata."
+      />
+
+      <br />
+
+      <FirstPageContainer
+        intro={"INTRO"}
+        title={"Il viaggio della plastica"}
+        description={
+          <p><span className="blueBoldText">Tutto ciò che si butta</span> è quindi più importante di quello  che pensiamo. Può infatti trasformarsi in una <span className="blueBoldText">nuova preziosa risorsa</span>. Per farlo però, deve affrontare un vero e proprio viaggio.
+            <br /><br />
+            Ogni materiale segue il proprio percorso, attraverso processi differenti, in impianti dedicati. Ma il punto di partenza è lo stesso per tutti: <span className="blueBoldText">una raccolta differenziata</span> dei rifiuti <span className="blueBoldText">fatta con cura</span>.
+            <br /><br />
+            Esistono diversi impianti dedicati al recupero dei rifiuti. Ed è proprio in uno di questi che la plastica inizia il suo viaggio.</p>
+        }
+        carouselImage={mockImages}
+        buttonLabel={"Inizia"}
+        buttonHandleClick={handleButtonClick}
       />
 
     </div>
