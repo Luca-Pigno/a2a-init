@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 // styles
 import "./index.css";
 
@@ -21,6 +22,7 @@ import Graduation from "./assets/images/icons/graduation.svg";
 import Newspaper from "./assets/images/icons/newspaper.svg";
 import Trash from "./assets/images/icons/trash.svg";
 import MockRoutes from "./mockRoutes.json";
+import MenuDropDown from "./components/functional_components/menuDropDown/MenuDropDown";
 
 
 // In base al numero di immagini nell'array, andare nel file Carousel.css e modificare alcuni parametri 
@@ -29,16 +31,48 @@ const mockImages = [
   "https://www.youandthemat.com/wp-content/uploads/nature-2-26-17.jpg",
   "https://dearsam.com/img/600/744/resize/n/a/nature-day-70x50_8ace0.jpg",
   "https://www.iucn.org/sites/dev/files/content/images/2020/shutterstock_1458128810.jpg"
-]
+];
+
+const mockFactories = ["Muggiano", "Location 2", "Location 3", "Location 4", "Location 5", "Location 6", "Location 7", "Location 8"];
+
+const mockLinks = [
+  {
+    label: "Vai ad A2A",
+    to: "https://google.com"
+  },
+  {
+    label: "Informazioni Legali",
+    to: "https://google.com"
+  },
+  {
+    label: "Privacy",
+    to: "https://google.com"
+  },
+  {
+    label: "Cookie Policy",
+    to: "https://google.com"
+  },
+  {
+    label: "Contatti",
+    to: "https://google.com"
+  }
+];
 
 const App = () => {
+
+  const [ state, setState ] = useState({
+    selectedFactory: mockFactories[0]
+  })
 
   const handleButtonClick = () => {
     console.log("Bravo, hai cliccato il bottone...")
   }
 
-  const handleMenuClick = (e) => {
-    console.log("Il menù è " + (e == false ? "chiuso" : "aperto"));
+  const handleFactoryClick = (value) => {
+    setState({
+      ...state,
+      selectedFactory: value
+    })
   }
 
   return (
@@ -247,6 +281,16 @@ const App = () => {
 
       <br /><br />
 
+      <MenuDropDown
+        factories={mockFactories}
+        selectedFactory={state.selectedFactory}
+        links={mockLinks}
+        company={"A2A S.p.A."}
+        pi={"P.I. 11957540153"}
+        handleFactoryClick={handleFactoryClick}
+      />
+
+      <br /><br />
     </div>
   );
 }
