@@ -8,7 +8,7 @@
 .menu-drop-down-triangle {
   width: 0;
   height: 0;
-  border-bottom: 12px solid var(--blue);
+  border-bottom: 10px solid var(--blue);
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   margin-right: 25px;
@@ -35,7 +35,6 @@
   font-weight: var(--weight-texts);
   letter-spacing: 1px;
   border-radius: 10px 10px 0 0;
-  cursor: pointer;
 }
 
 .menu-drop-down-links-container {

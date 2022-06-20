@@ -1,10 +1,10 @@
 .menu-item-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 115px;
-  padding-right: 20px;
-  height: 225px;
+  flex-direction: row;
+  width: 308px;
+  height: 115px;
+  margin-left: calc(50% - 154px);
+  padding: 0 ;
   position: relative;
 }
 
@@ -14,6 +14,7 @@
   border-radius: 50%;
   overflow: hidden;
   background-color: var(--orange);
+  margin: 10px 0 0 90px;
 }
 
 .menu-item-photo-container img {
@@ -26,38 +27,94 @@
   font-size: 10px;
   text-transform: uppercase;
   font-weight: var(--weight-texts);
-  text-align: center;
+  display: flex;
+  align-items: center;
   position: absolute;
-  top: 135px;
+  right: 0;
+  width: 90px;
+  height: 100%;
 }
 
 .menu-item-dot-container {
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
+  left: 30px;
 }
 
 .menu-item-line-container {
   background-color: var(--grey);
-  height: .5px;
-  width: 115px;
+  height: 100%;
+  width: .5px;
   position: absolute;
-  bottom: 35px;
-  right: 0;
+  top: 0;
+  left: 50px;
 }
 
 .menu-first-item-line-container {
-  width: 65px;
+  height: 57px;
+  top: auto;
+  bottom: 0;
 }
 
 .menu-last-item-line-container {
-  width: 65px;
-  right: auto;
-  left: 0;
+  height: 57px;
 }
 
 .menu-item-id-container {
   font-size: 10px;
   color: var(--white);
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-item-container {
+    flex-direction: column;
+    align-items: center;
+    width: 115px;
+    padding-right: 20px;
+    height: 225px;
+    margin-left: 0;
+  }
+
+  .menu-item-line-container {
+    height: .5px;
+    width: 115px;
+    bottom: 35px;
+    right: 0;
+    top: auto;
+    left: auto;
+  }
+
+  .menu-first-item-line-container {
+    width: 66px;
+  }
+  
+  .menu-last-item-line-container {
+    width: 46px;
+    left: 0;
+  }
+
+  .menu-item-title-container {
+    text-align: center;
+    align-items: baseline;
+    top: 135px;
+    height: unset;
+    right: unset;
+    width: unset;
+  }
+
+  .menu-item-photo-container {
+    margin: 0;
+  }
+
+  .menu-item-id-container {
+    bottom: 0;
+  }
+
+  .menu-item-dot-container {
+    left: unset;
+    bottom: 20px;
+  }
+
 }

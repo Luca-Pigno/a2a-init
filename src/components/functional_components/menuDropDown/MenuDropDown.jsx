@@ -13,10 +13,12 @@ const MenuDropDown = (props) => {
   })
 
   const openDropDownMenu = () => {
-    setState({
-      ...state,
-      dropDownIsOpen: !state.dropDownIsOpen
-    })
+    if (props.factories.length > 1) {
+      setState({
+        ...state,
+        dropDownIsOpen: !state.dropDownIsOpen
+      })
+    }
   }
 
   const handleFactoryClick = (value) => {
@@ -31,14 +33,21 @@ const MenuDropDown = (props) => {
     <div className="menu-drop-down-container">
       <div className="menu-drop-down-triangle" />
       <div className="menu-drop-down-box">
-        <div className="menu-drop-down-factory-container noselect" onClick={openDropDownMenu}>
+        <div
+          className="menu-drop-down-factory-container noselect"
+          onClick={openDropDownMenu}
+          style={{ cursor: props.factories.length > 1 ? "pointer" : "default" }}
+        >
           <div>{props.selectedFactory}</div>
-          <div className={state.dropDownIsOpen ? "menu-drop-down-arrow-rotates" : null}>
-            <img 
-              src={ArrowDown}
-              alt={state.dropDownIsOpen ? "close" : "open"}
-            />
-          </div>
+          {
+            props.factories.length > 1 &&
+            <div className={state.dropDownIsOpen ? "menu-drop-down-arrow-rotates" : null}>
+              <img
+                src={ArrowDown}
+                alt={state.dropDownIsOpen ? "close" : "open"}
+              />
+            </div>
+          }
         </div>
 
         {

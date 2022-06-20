@@ -3,21 +3,21 @@
     "id": "01",
     "title": "introduzione",
     "color": "blue",
-    "linkTo": "#",
+    "linkTo": "/",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg"
   },
   {
     "id": "02",
     "title": "il viaggio della plastica",
     "color": "orange",
-    "linkTo": "#",
+    "linkTo": "/il-viaggio-della-plastica",
     "photo": "https://www.youandthemat.com/wp-content/uploads/nature-2-26-17.jpg"
   },
   {
     "id": "03",
     "title": "da scarto a risorsa",
     "color": "blue",
-    "linkTo": "#",
+    "linkTo": "/da-scarto-a-risorsa",
     "photo": "https://dearsam.com/img/600/744/resize/n/a/nature-day-70x50_8ace0.jpg"
   },
   {
@@ -29,62 +29,97 @@
   },
   {
     "id": "05",
-    "title": "macchina aprisacchi",
+    "title": "inizio del percorso",
     "color": "orange",
+    "linkTo": "#",
+    "photo": "https://www.iucn.org/sites/dev/files/content/images/2020/shutterstock_1458128810.jpg"
+  },
+  {
+    "id": "06",
+    "title": "macchina aprisacchi",
+    "color": "blue",
     "linkTo": "#",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg"
   },
   {
-    "id": "06",
+    "id": "07",
     "title": "separazione meccanica",
-    "color": "blue",
+    "color": "orange",
     "linkTo": "#",
     "photo": "https://www.youandthemat.com/wp-content/uploads/nature-2-26-17.jpg"
   },
   {
-    "id": "07",
+    "id": "08",
     "title": "vaglio rotante",
-    "color": "orange",
+    "color": "blue",
     "linkTo": "#",
     "photo": "https://dearsam.com/img/600/744/resize/n/a/nature-day-70x50_8ace0.jpg"
   },
   {
-    "id": "08",
+    "id": "09",
     "title": "separatore balistico",
     "color": "blue",
     "linkTo": "#",
     "photo": "https://www.iucn.org/sites/dev/files/content/images/2020/shutterstock_1458128810.jpg"
   },
   {
-    "id": "09",
+    "id": "10",
     "title": "wind shifter",
     "color": "blue",
     "linkTo": "#",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg"
   },
   {
-    "id": "10",
+    "id": "11",
     "title": "magnete deferizzatore",
     "color": "blue",
     "linkTo": "#",
     "photo": "https://www.youandthemat.com/wp-content/uploads/nature-2-26-17.jpg"
   },
   {
-    "id": "11",
+    "id": "12",
     "title": "separazione ottica",
+    "color": "orange",
+    "linkTo": "#",
+    "photo": "https://dearsam.com/img/600/744/resize/n/a/nature-day-70x50_8ace0.jpg"
+  },
+  {
+    "id": "13",
+    "title": "scanner ottico",
     "color": "blue",
     "linkTo": "#",
     "photo": "https://dearsam.com/img/600/744/resize/n/a/nature-day-70x50_8ace0.jpg"
   },
   {
-    "id": "12",
+    "id": "14",
     "title": "separazione manuale",
     "color": "orange",
     "linkTo": "#",
     "photo": "https://www.iucn.org/sites/dev/files/content/images/2020/shutterstock_1458128810.jpg"
   },
   {
-    "id": "13",
+    "id": "15",
+    "title": "mettiti alla prova",
+    "color": "blue",
+    "linkTo": "#",
+    "photo": "https://www.iucn.org/sites/dev/files/content/images/2020/shutterstock_1458128810.jpg"
+  },
+  {
+    "id": "16",
+    "title": "prodotti finali",
+    "color": "orange",
+    "linkTo": "#",
+    "photo": "https://www.iucn.org/sites/dev/files/content/images/2020/shutterstock_1458128810.jpg"
+  },
+  {
+    "id": "17",
+    "title": "pressa idraulica",
+    "color": "blue",
+    "linkTo": "#",
+    "photo": "https://www.iucn.org/sites/dev/files/content/images/2020/shutterstock_1458128810.jpg"
+  },
+  {
+    "id": "18",
     "title": "prodotti finali",
     "color": "blue",
     "linkTo": "#",
