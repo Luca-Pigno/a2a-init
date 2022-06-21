@@ -123,7 +123,7 @@
   height: 100vh;
   transition: top .7s;
   overflow-y: scroll;
-  /* padding-bottom: 50px; */
+  padding-bottom: 50px;
 }
 
 .menu-open-background::-webkit-scrollbar {
@@ -200,7 +200,7 @@
   .menu-open-background {
     top: -424px;
     height: 424px;
-    /* padding-bottom: 0; */
+    padding-bottom: 0;
   }
 
   .menu-open-animation-background {

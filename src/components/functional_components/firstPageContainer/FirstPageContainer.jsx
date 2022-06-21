@@ -27,9 +27,12 @@ const FirstPageContainer = (props) => {
           </div>
         </div>
 
-        <Carousel
-          images={props.carouselImage}
-        />
+        {/* <div className="first-page-carousel-container">
+          <Carousel
+            images={props.carouselImage}
+          />
+        </div> */}
+
       </div>
     </div>
   )

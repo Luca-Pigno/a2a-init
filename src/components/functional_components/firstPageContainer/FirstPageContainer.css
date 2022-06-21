@@ -1,7 +1,7 @@
 .first-page-container {
   width: 100%;
-  height: 100vh;
-  padding: 0;
+  min-height: 100vh;
+  padding: 130px 0 100px 0;
   display: flex;
   justify-content: center;
 }
@@ -20,11 +20,13 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
+  padding: 0 20px;
 }
 
 .first-page-text-container h1 {
   color: var(--blue);
   font-size: 47px;
+  margin: 10px 0 25px;
 }
 
 .first-page-text-container h3 {
@@ -38,9 +40,21 @@
   line-height: 22px;
 }
 
+.second-part-text {
+  padding-left: 95px;
+}
+
+.first-page-button-container {
+  display: flex;
+  margin-top: 45px;
+  justify-content: center;
+  max-width: 1200px;
+}
+
 @media screen and (min-width: 1024px) {
   .first-page-container {
     padding: 0 120px;
+    height: 100vh;
     min-height: 810px;
   }
 
@@ -49,15 +63,14 @@
   }
 
   .first-page-text-box {
-    width: calc(100% - 328px);
-  }
-
-  .first-page-text-container {
-    padding-right: 10px;
+    width: 100%;
+    padding: 0 350px 0 0;
   }
 
   .first-page-text-container h1 {
     font-size: 70px;
+    margin: 0;
+    padding-right: 100px;
   }
 
   .intro-page-text h1 {
@@ -71,24 +84,31 @@
   .first-page-text-container div p {
     font-size: 18px;
     line-height: 29px;
-    padding: 50px 0 0 0;
     width: 560px;
     max-width: 100%;
   }
 
+  .first-page-text-container div:first-child p {
+    padding: 50px 0 30px 0;
+  }
+
+  .second-part-text {
+    padding-left: 0;
+  }
+
   .first-page-button-container {
-    position: absolute;
-    bottom: 32px;
-    right: 67px;
+    justify-content: flex-end;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .first-page-text-container div p {
+@media screen and (min-width: 1280px) {
+  .first-page-text-container div p,
+  .first-page-text-container div:first-child p {
     padding: 50px 0 0 50px;
   }
 
-  .first-page-text-box {
-    width: calc(100% - 428px);
+  .first-page-button-container {
+    width: calc(100vw - 240px);
+    justify-content: center;
   }
 }

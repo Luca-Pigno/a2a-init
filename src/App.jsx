@@ -58,7 +58,7 @@ const mockLinks = [
 
 const App = () => {
 
-  const [ state, setState ] = useState({
+  const [state, setState] = useState({
     selectedFactory: mockFactories[0]
   })
 
@@ -232,17 +232,25 @@ const App = () => {
         intro={"INTRO"}
         title={"Il viaggio della plastica"}
         description={
-          <p><span className="blueBoldText">Tutto ciò che si butta</span> è quindi più importante di quello  che pensiamo. Può infatti trasformarsi in una <span className="blueBoldText">nuova preziosa risorsa</span>. Per farlo però, deve affrontare un vero e proprio viaggio.
-            <br /><br />
-            Ogni materiale segue il proprio percorso, attraverso processi differenti, in impianti dedicati. Ma il punto di partenza è lo stesso per tutti: <span className="blueBoldText">una raccolta differenziata</span> dei rifiuti <span className="blueBoldText">fatta con cura</span>.
-            <br /><br />
-            Esistono diversi impianti dedicati al recupero dei rifiuti. Ed è proprio in uno di questi che la plastica inizia il suo viaggio.</p>
+          <>
+            <div className="first-part-text">
+              <p><span className="blueBoldText">Tutto ciò che si butta</span> è quindi più importante di quello  che pensiamo. Può infatti trasformarsi in una <span className="blueBoldText">nuova preziosa risorsa</span>. Per farlo però, deve affrontare un vero e proprio viaggio.</p>
+            </div>
+            <Carousel
+              images={mockImages}
+            />
+            <div className="second-part-text">
+              <p>Ogni materiale segue il proprio percorso, attraverso processi differenti, in impianti dedicati. Ma il punto di partenza è lo stesso per tutti: <span className="blueBoldText">una raccolta differenziata</span> dei rifiuti <span className="blueBoldText">fatta con cura</span>.
+                <br /><br />
+                Esistono diversi impianti dedicati al recupero dei rifiuti. Ed è proprio in uno di questi che la plastica inizia il suo viaggio.</p>
+            </div>
+          </>
         }
         carouselImage={mockImages}
         buttonLabel={"Inizia"}
         buttonHandleClick={handleButtonClick}
       />
-
+      
       <br /><br />
 
       <MenuDot
