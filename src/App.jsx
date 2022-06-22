@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // styles
 import "./index.css";
 
@@ -16,12 +16,16 @@ import IconButton from "./components/functional_components/iconButton/IconButton
 import GameCard from "./components/functional_components/gameCard/GameCard";
 import MenuDot from "./components/functional_components/menuDot/MenuDot";
 import MenuItem from "./components/functional_components/menuItem/MenuItem";
+import Game from "./components/functional_components/game/Game";
+import GameCircle from "./components/hook_components/gameCircle/GameCircle";
+import GameBar from "./components/functional_components/gameBar/GameBar";
 
 // assets
 import Graduation from "./assets/images/icons/graduation.svg";
 import Newspaper from "./assets/images/icons/newspaper.svg";
 import Trash from "./assets/images/icons/trash.svg";
 import MockRoutes from "./mockRoutes.json";
+
 
 // In base al numero di immagini nell'array, andare nel file Carousel.css e modificare alcuni parametri 
 const mockImages = [
@@ -58,9 +62,58 @@ const mockLinks = [
 
 const App = () => {
 
+  const maxPoints = 300;
+
   const [state, setState] = useState({
-    selectedFactory: mockFactories[0]
+    selectedFactory: mockFactories[0],
+    score: 0,
+    newScore: 0
   })
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (state.score < state.newScore) {
+        setState({
+          ...state,
+          score: state.score + 1
+        })
+      }
+      if (state.score > state.newScore) {
+        setState({
+          ...state,
+          score: state.score - 1
+        })
+      }
+    }, 5)
+  })
+
+  const increaseScore = () => {
+    if (state.score < maxPoints) {
+      let newScore = state.score + 30;
+      if (newScore > maxPoints) {
+        newScore = maxPoints;
+      }
+
+      setState({
+        ...state,
+        newScore: newScore
+      })
+    }
+  }
+
+  const decreaseScore = () => {
+    if (state.score > 0) {
+      let newScore = state.score - 30;
+      if (newScore < 0) {
+        newScore = 0;
+      }
+
+      setState({
+        ...state,
+        newScore: newScore
+      })
+    }
+  }
 
   const handleButtonClick = () => {
     console.log("Bravo, hai cliccato il bottone...")
@@ -152,9 +205,9 @@ const App = () => {
 
       <br />
 
-      <Carousel
+      {/* <Carousel
         images={mockImages}
-      />
+      /> */}
 
       <br />
 
@@ -288,8 +341,22 @@ const App = () => {
       />
 
       <br /><br />
+      <div style={{ display: "flex" }}>
+        <GameCircle
+          score={state.score}
+          maxPoints={maxPoints}
+        />
+        <GameBar
+          score={state.score}
+          maxPoints={maxPoints}
+          limit={200}
+        />
+      </div>
+      <button onClick={increaseScore}>+</button>
+      <button onClick={decreaseScore}>-</button>
+      {/* <Game /> */}
 
-    </div>
+    </div >
   );
 }
 

@@ -1,0 +1,110 @@
+.circle-container {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  margin: 50px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.circle-container .circle-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.circle-container .circle-text p {
+  font-size: 18px;
+  font-weight: var(--weight-texts);
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: 27px;
+}
+
+.circle {
+  width: 128px;
+  height: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle .circle-point {
+  width: 12px;
+  height: 1.5px;
+  background-color: gray;
+  position: absolute;
+}
+
+.marked {
+  animation: glow 0.1s linear forwards;
+}
+
+.circle-midline {
+  position: absolute;
+  width: calc(100% + 1px);
+  height: 1px;
+  background-color: var(--white);
+  top: 50%;
+  left: -1px;
+}
+
+.circle-score {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 30px;
+  color: var(--orange);
+  font-weight: var(--weight-texts);
+}
+
+.circle-middle-round {
+  border: 1px solid var(--white);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-middle-inner-round {
+  border: 1px solid var(--white);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--orange);
+}
+
+.circle-score-line {
+  width: 52px;
+  height: 2px;
+  background-color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, 0%) rotate(5deg);
+  transform-origin: 100% 50%;
+  transition: all 0.05s;
+}
+
+@keyframes glow {
+  0% {
+    background-color: gray;
+  }
+  100% {
+    background-color: var(--orange);
+  }
+}
