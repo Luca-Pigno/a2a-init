@@ -26,13 +26,6 @@ const Menu = (props) => {
     })
   }
 
-  const closeMenu = () => {
-    setState({
-      ...state,
-      isOpen: false
-    })
-  }
-
   const handleFactoryClick = (value) => {
     props.handleFactoryClick(value);
   }
@@ -78,7 +71,7 @@ const Menu = (props) => {
                     linkTo={route.linkTo}
                     photo={route.photo}
                     lastId={props.routes[props.routes.length - 1].id}
-                    handleClick={closeMenu}
+                    handleClick={closeAllMenus}
                   />
                 </div>
               )
@@ -107,7 +100,7 @@ const Menu = (props) => {
                     color={route.color}
                     to={route.linkTo}
                     title={route.title}
-                    handleClick={closeMenu}
+                    handleClick={closeAllMenus}
                   />
                 </div>
               )
